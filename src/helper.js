@@ -1,16 +1,16 @@
 export const monthByNumber = {
-    0: 'January',
-    1: 'February',
-    2: 'March',
-    3: 'April',
-    4: 'May',
-    5: 'June',
-    6: 'July',
-    7: 'August',
-    8: 'September',
-    9: 'October',
-    10: 'November',
-    11: 'December'
+    0: {'EN':'January', 'FR':'Janvier'},
+    1: {'EN':'February', 'FR':'Février'},
+    2: {'EN':'March', 'FR':'Mars'},
+    3: {'EN':'April', 'FR':'Avril'},
+    4: {'EN':'May', 'FR':'Mai'},
+    5: {'EN':'June', 'FR':'Juin'},
+    6: {'EN':'July', 'FR':'Juillet'},
+    7: {'EN':'August', 'FR':'Août'},
+    8: {'EN':'September', 'FR':'Septembre'},
+    9: {'EN':'October', 'FR':'Octobre'},
+    10: {'EN':'November', 'FR':'Novembre'},
+    11: {'EN':'December', 'FR':'Décembre'},
 };
 
 export const numberByMonth = {
@@ -30,7 +30,7 @@ export const numberByMonth = {
 
 export const daysInMonth = {
     0: 31,
-    1: 28,
+    1: 29,
     2: 31,
     3: 30,
     4: 31,

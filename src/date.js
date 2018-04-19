@@ -84,25 +84,27 @@ export class DropdownDate extends React.Component {
     generateMonthOptions() {
         const { startMonth, endMonth, startYear, endYear, selectedYear } = this.state;
         let months = [];
-        if (selectedYear === startYear) {
+        const geocode = this.props.geocode ? this.props.geocode : 'EN';
+
+      if (selectedYear === startYear) {
             for (let i = startMonth; i <= 11; i++) {
                 months.push({
                     value: i,
-                    month: monthByNumber[i]
+                    month: monthByNumber[i][geocode]
                 });
             }
         } else if (selectedYear === endYear) {
             for (let i = 0; i <= endMonth; i++) {
                 months.push({
                     value: i,
-                    month: monthByNumber[i]
+                    month: monthByNumber[i][geocode]
                 });
             }
         } else {
             for (let i = 0; i <= 11; i++) {
                 months.push({
                     value: i,
-                    month: monthByNumber[i]
+                    month: monthByNumber[i][geocode]
                 });
             }
         }
