@@ -60,7 +60,7 @@ export class MonthPicker extends React.Component {
 
     renderMonthOptions() {
         const today = new Date();
-        const geocode = this.props.geocode ? this.props.geocode : 'EN';
+        const locale = this.props.locale ? this.props.locale : 'EN';
         let months = [];
         let month = 11;
         if (!this.props.endYearGiven) {
@@ -68,7 +68,7 @@ export class MonthPicker extends React.Component {
                 month = today.getMonth();
             }
         }
-        for (let i = 0; i <= month; ++i) { months.push(monthByNumber[i][geocode]); }
+        for (let i = 0; i <= month; ++i) { months.push(monthByNumber[i][locale]); }
 
         if (this.props.caps) {
             months = months.map((month) => { return month.toUpperCase(); });

@@ -274,27 +274,27 @@ var DropdownDate = exports.DropdownDate = function (_React$Component) {
                 selectedYear = _state2.selectedYear;
 
             var months = [];
-            var geocode = this.props.geocode ? this.props.geocode : 'EN';
+            var locale = this.props.locale ? this.props.locale : 'EN';
 
             if (selectedYear === startYear) {
                 for (var i = startMonth; i <= 11; i++) {
                     months.push({
                         value: i,
-                        month: _helper.monthByNumber[i][geocode]
+                        month: _helper.monthByNumber[i][locale]
                     });
                 }
             } else if (selectedYear === endYear) {
                 for (var _i2 = 0; _i2 <= endMonth; _i2++) {
                     months.push({
                         value: _i2,
-                        month: _helper.monthByNumber[_i2][geocode]
+                        month: _helper.monthByNumber[_i2][locale]
                     });
                 }
             } else {
                 for (var _i3 = 0; _i3 <= 11; _i3++) {
                     months.push({
                         value: _i3,
-                        month: _helper.monthByNumber[_i3][geocode]
+                        month: _helper.monthByNumber[_i3][locale]
                     });
                 }
             }
@@ -671,7 +671,7 @@ var MonthPicker = exports.MonthPicker = function (_React$Component2) {
             var _this5 = this;
 
             var today = new Date();
-            var geocode = this.props.geocode ? this.props.geocode : 'EN';
+            var locale = this.props.locale ? this.props.locale : 'EN';
             var months = [];
             var month = 11;
             if (!this.props.endYearGiven) {
@@ -680,7 +680,7 @@ var MonthPicker = exports.MonthPicker = function (_React$Component2) {
                 }
             }
             for (var i = 0; i <= month; ++i) {
-                months.push(_helper.monthByNumber[i][geocode]);
+                months.push(_helper.monthByNumber[i][locale]);
             }
 
             if (this.props.caps) {
