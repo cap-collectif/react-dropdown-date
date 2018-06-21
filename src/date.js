@@ -1,7 +1,6 @@
 import React, { PropTypes } from 'react';
 import { monthByNumber, numberByMonth, daysInMonth, unit } from './helper';
 
-
 export class DropdownDate extends React.Component {
     constructor(props) {
         super(props);

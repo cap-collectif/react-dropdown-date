@@ -643,7 +643,8 @@ var YearPicker = exports.YearPicker = function (_React$Component) {
                     onChange: function onChange(e) {
                         return _this3.props.onChange(e.target.value);
                     },
-                    value: this.props.value
+                    value: this.props.value,
+                    disabled: this.props.disabled
                 },
                 this.renderYearOptions()
             );
@@ -725,7 +726,8 @@ var MonthPicker = exports.MonthPicker = function (_React$Component2) {
                     onChange: function onChange(e) {
                         return _this6.props.onChange(e.target.value);
                     },
-                    value: this.props.value
+                    value: this.props.value,
+                    disabled: this.props.disabled
                 },
                 this.renderMonthOptions()
             );
@@ -799,7 +801,8 @@ var DayPicker = exports.DayPicker = function (_React$Component3) {
                     onChange: function onChange(e) {
                         return _this8.props.onChange(e.target.value);
                     },
-                    value: this.props.value
+                    value: this.props.value,
+                    disabled: this.props.disabled
                 },
                 this.renderDayOptions()
             );
